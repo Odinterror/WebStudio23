@@ -121,9 +121,9 @@ body {
   }
 }
 
-// =======================
+
 // HERO SECTION
-// =======================
+
 .hero {
 background: url('../image/hero.png') center center / cover no-repeat;
   height: 100vh;
@@ -164,9 +164,9 @@ background: url('../image/hero.png') center center / cover no-repeat;
   }
 }
 
-// =======================
+
 // ABOUT SECTION
-// =======================
+
 .about {
   padding: 60px 0;
   background-color: #fff;
@@ -215,9 +215,8 @@ background: url('../image/hero.png') center center / cover no-repeat;
   }
 }
 
-// =======================
 // WORK SECTION
-// =======================
+
 .work {
   &-title {
     font-size: 28px;
@@ -283,9 +282,8 @@ background: url('../image/hero.png') center center / cover no-repeat;
   }
 }
 
-// =======================
 // TEAM SECTION
-// =======================
+
 .team {
   padding: 80px 0;
   background-color: $light-bg;
@@ -338,9 +336,8 @@ background: url('../image/hero.png') center center / cover no-repeat;
     }
   }
 
-  // =======================
   // SOCIAL ICONS (оновлено)
-  // =======================
+
   .social-list {
     display: flex;
     justify-content: center;
@@ -379,9 +376,8 @@ background: url('../image/hero.png') center center / cover no-repeat;
 }
 
 
-// =======================
 // FOOTER
-// =======================
+
 .footer {
   background-color: #2f303a;
   color: #fff;
@@ -438,6 +434,7 @@ background: url('../image/hero.png') center center / cover no-repeat;
   }
 
   // Соцмережі
+
   .footer__social {
     flex: 1;
     text-align: center;
@@ -480,6 +477,7 @@ background: url('../image/hero.png') center center / cover no-repeat;
   }
 
   // Підписка
+
   .footer__subscribe {
     flex: 1;
     text-align: right;
@@ -543,9 +541,8 @@ background: url('../image/hero.png') center center / cover no-repeat;
   }
 }
 
-// =======================
 // PORTFOLIO PAGE
-// =======================
+
 .portfolio {
   padding: 60px 0;
   background-color: #fff;
@@ -638,10 +635,8 @@ background: url('../image/hero.png') center center / cover no-repeat;
   }
 }
 
-
-// =======================
 // MODAL WINDOW
-// =======================
+
 .modal {
   display: none;
   position: fixed;
@@ -725,9 +720,8 @@ background: url('../image/hero.png') center center / cover no-repeat;
     }
   }
 
-  // =======================
   // CHECKBOX SECTION
-  // =======================
+
   &__checkbox {
     display: flex;
     align-items: center;
@@ -776,9 +770,8 @@ background: url('../image/hero.png') center center / cover no-repeat;
   }
 }
 
-  // =======================
-  // clients SECTION
-  // =======================
+// clients SECTION
+
 
 .clients {
   padding: 60px 0;
