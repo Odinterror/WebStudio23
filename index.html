@@ -21,7 +21,7 @@
       <nav class="nav">
         <ul class="nav__list">
           <li><a href="#" class="nav__link active">Студія</a></li>
-          <li><a href="#" class="nav__link">Портфоліо</a></li>
+          <li><a href="portfolio.html" class="nav__link">Портфоліо</a></li>
           <li><a href="#" class="nav__link">Контакти</a></li>
         </ul>
       </nav>
@@ -169,24 +169,123 @@
     </li>
   </ul>
 </section>
+<section class="clients">
+  <div class="container">
+    <h2 class="clients__title">Постійні клієнти</h2>
+    <ul class="clients__list">
+      <li class="clients__item">
+        <a href="#" class="clients__link">
+          <img src="./image/Client 1.png" alt="Client 1" class="clients__logo">
+        </a>
+      </li>
+      <li class="clients__item">
+        <a href="#" class="clients__link">
+          <img src="./image/Client 2.png" alt="Client 2" class="clients__logo">
+        </a>
+      </li>
+      <li class="clients__item">
+        <a href="#" class="clients__link">
+          <img src="./image/Client 3.png" alt="Client 3" class="clients__logo">
+        </a>
+      </li>
+      <li class="clients__item">
+        <a href="#" class="clients__link">
+          <img src="./image/Client 4.png" class="clients__logo">
+        </a>
+      </li>
+      <li class="clients__item">
+        <a href="#" class="clients__link">
+          <img src="./image/Client 5.png" alt="Client 5" class="clients__logo">
+        </a>
+      </li>
+      <li class="clients__item">
+        <a href="#" class="clients__link">
+          <img src="./image/Client 6.png" alt="Client 6" class="clients__logo">
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
 
     </main>
-    <footer>
-        <a href="#" class="footer">Web<span class="logo-part">Studio</span></a>
-        <address class="address">
-            <ul class="address-list">
-                <li class="address-item">
-                    <p class="address-text">м.Київ, пр-т Лесі Українки, 26</p>
-                </li>
-                <li class="address-item">
-                    <a href="mailto:info@devstudio.com" class="adress-link">info@devstudio.com</a>
-                </li>
-                <li class="address-item">
-                    <a href="tel:+380961111111" class="adress-link">+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </address>
-    </footer>
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__info">
+      <a href="#" class="footer__logo"><span class="logo--blue">Web</span>Studio</a>
+      <address class="footer__address">
+        <p>м. Київ, пр-т Лесі Українки, 26</p>
+        <a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
+        <a href="tel:+380961111111">+38 096 111 11 11</a>
+      </address>
+    </div>
+
+    <div class="footer__social">
+      <p class="footer__title">ПРИЄДНУЙТЕСЬ</p>
+      <ul class="social-list">
+        <li><a href="#"><img src="./image/instagram 2.png" alt="Instagram" /></a></li>
+        <li><a href="#"><img src="./image/twitter 1.png" alt="Twitter" /></a></li>
+        <li><a href="#"><img src="./image/facebook 1.png" alt="Facebook" /></a></li>
+        <li><a href="#"><img src="./image/linkedin 1.png" alt="LinkedIn" /></a></li>
+      </ul>
+    </div>
+
+    <div class="footer__subscribe">
+      <p class="footer__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+      <form class="subscribe-form">
+        <input type="email" placeholder="E-mail" required />
+        <button type="submit" class="subscribe-btn">
+          Підписатися <img src="./image/telegram.png" alt="Send" />
+        </button>
+      </form>
+    </div>
+  </div>
+</footer>
+    <div class="modal" id="studioModal">
+  <div class="modal__overlay"></div>
+  <div class="modal__content">
+    <button class="modal__close">&times;</button>
+    <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+
+    <form class="modal__form">
+      <label>
+        <input type="text" name="name" placeholder="Ім’я" required />
+      </label>
+
+      <label>
+        <input type="tel" name="phone" placeholder="Телефон" required />
+      </label>
+
+      <label>
+        <input type="email" name="email" placeholder="Пошта" required />
+      </label>
+
+      <label>
+        <textarea name="comment" placeholder="Коментар"></textarea>
+      </label>
+
+      <label class="modal__checkbox">
+        <input type="checkbox" required />
+        Погоджуюся з розсилкою та приймаю
+        <a href="#" target="_blank">Умови договору</a>
+      </label>
+
+      <button type="submit" class="modal__btn">Відправити</button>
+    </form>
+  </div>
+  <script>
+  document.querySelector('.nav__link.active').addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('studioModal').classList.add('active');
+  });
+
+  document.querySelector('.modal__close').addEventListener('click', () => {
+    document.getElementById('studioModal').classList.remove('active');
+  });
+
+  document.querySelector('.modal__overlay').addEventListener('click', () => {
+    document.getElementById('studioModal').classList.remove('active');
+  });
+</script>
 </body>
 
 </html>
