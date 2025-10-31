@@ -596,17 +596,13 @@ background: url('../image/hero.png') center center / cover no-repeat;
       border: 1px solid #eee;
       border-radius: 6px;
       overflow: hidden;
-      transition: box-shadow 0.3s ease, transform 0.3s ease;
-
-      &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      }
+      transition: all 0.3s ease;
 
       img {
         width: 100%;
         height: auto;
         display: block;
+        transition: filter 0.3s ease;
       }
 
       h3 {
@@ -614,16 +610,34 @@ background: url('../image/hero.png') center center / cover no-repeat;
         font-weight: 600;
         margin: 15px 0 5px;
         color: $text-color;
+        transition: color 0.3s ease;
       }
 
       p {
         color: $gray-color;
         font-size: 14px;
         margin-bottom: 15px;
+        transition: color 0.3s ease;
+      }
+
+      &:hover {
+        background-color: $main-color;
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+        img {
+          filter: brightness(0) invert(1); // робить іконку/зображення білим
+        }
+
+        h3,
+        p {
+          color: #fff;
+        }
       }
     }
   }
 }
+
 
 // =======================
 // MODAL WINDOW
@@ -728,7 +742,7 @@ background: url('../image/hero.png') center center / cover no-repeat;
       width: 16px;
       height: 16px;
       cursor: pointer;
-      accent-color: $main-color; // робить чекбокс у фірмовому кольорі
+      accent-color: $main-color;
     }
 
     label {

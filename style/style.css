@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+
+/*        Header        */
+
+
 .header {
   background-color: #fff;
   border-bottom: 1px solid #ececec;
@@ -84,6 +88,10 @@ body {
   color: #2196f3;
 }
 
+
+/*        Hero        */
+
+
 .hero {
   background: url("../image/hero.png") center center/cover no-repeat;
   height: 100vh;
@@ -118,6 +126,10 @@ body {
 .hero__button:hover, .hero__button:focus {
   background-color: rgb(11.5384615385, 124.0384615385, 213.4615384615);
 }
+
+
+/*        About        */
+
 
 .about {
   padding: 60px 0;
@@ -160,6 +172,10 @@ body {
   color: #555;
   line-height: 1.5;
 }
+
+
+/*        Work        */
+
 
 .work-title {
   font-size: 28px;
@@ -211,6 +227,10 @@ body {
 .work-overlay:hover .work-text {
   background-color: rgba(33, 150, 243, 0.6);
 }
+
+
+/*        Team       **/
+
 
 .team {
   padding: 80px 0;
@@ -287,6 +307,69 @@ body {
 a:hover .team .social-list a .social-icon {
   filter: brightness(0) invert(1);
 }
+
+
+/*        Clients     **/
+
+
+.clients {
+  padding: 60px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.clients__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2e2f42;
+  margin-bottom: 40px;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clients__item {
+  width: 160px;
+  height: 90px;
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, filter 0.3s ease;
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  border-color: #2196f3;
+}
+
+.clients__link:hover .clients__logo,
+.clients__link:focus .clients__logo {
+  filter: brightness(0) saturate(100%) invert(31%) sepia(95%) saturate(1864%) hue-rotate(191deg) brightness(99%) contrast(103%);
+}
+
+.clients__logo {
+  max-width: 80%;
+  height: auto;
+  transition: filter 0.3s ease;
+  filter: grayscale(100%) brightness(0.6);
+}
+
+
+/*        Footer      **/
+
 
 .footer {
   background-color: #2f303a;
@@ -424,6 +507,10 @@ a:hover .team .social-list a .social-icon {
   background-color: rgb(12.0615384615, 129.6615384615, 223.1384615385);
 }
 
+
+/*        Portfolio       **/
+
+
 .portfolio {
   padding: 60px 0;
   background-color: #fff;
@@ -491,6 +578,34 @@ a:hover .team .social-list a .social-icon {
   font-size: 14px;
   margin-bottom: 15px;
 }
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.portfolio-thumb:hover .portfolio-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/*        Modal Window       **/
+
 
 .modal {
   display: none;
@@ -606,59 +721,4 @@ a:hover .team .social-list a .social-icon {
 .modal__btn:hover {
   background-color: rgb(12.0615384615, 129.6615384615, 223.1384615385);
 }
-.clients {
-  padding: 60px 0;
-  background-color: #fff;
-  text-align: center;
-}
-
-.clients__title {
-  font-size: 28px;
-  font-weight: 700;
-  color: #2e2f42;
-  margin-bottom: 40px;
-}
-
-.clients__list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 24px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.clients__item {
-  width: 160px;
-  height: 90px;
-}
-
-.clients__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
-  transition: border-color 0.3s ease, filter 0.3s ease;
-}
-
-.clients__link:hover,
-.clients__link:focus {
-  border-color: #2196f3;
-}
-
-.clients__link:hover .clients__logo,
-.clients__link:focus .clients__logo {
-  filter: brightness(0) saturate(100%) invert(31%) sepia(95%) saturate(1864%) hue-rotate(191deg) brightness(99%) contrast(103%);
-}
-
-.clients__logo {
-  max-width: 80%;
-  height: auto;
-  transition: filter 0.3s ease;
-  filter: grayscale(100%) brightness(0.6);
-}
-
 /*# sourceMappingURL=style.css.map */
