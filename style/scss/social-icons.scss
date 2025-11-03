@@ -1,0 +1,35 @@
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: $main-color; // голубий фон при наведенні
+        transform: scale(1.05);
+      }
+
+      .social-icon {
+        width: 20px;
+        height: 20px;
+        filter: brightness(0) invert(0.6); // сірий вигляд іконок
+        transition: filter 0.3s ease;
+
+        a:hover & {
+          filter: brightness(0) invert(1); // біла іконка при hover
+        }
+      }
+    }
+  }

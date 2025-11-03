@@ -1,0 +1,23 @@
+.contacts {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+
+    .contact__link {
+      text-decoration: none;
+      color: $gray-color;
+      font-weight: 500;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color $transition;
+
+      &:hover,
+      &:focus {
+        color: $main-color;
+      }
+    }
+  }

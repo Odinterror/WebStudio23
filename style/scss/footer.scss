@@ -1,0 +1,161 @@
+.footer {
+  background-color: #2f303a;
+  color: #fff;
+  padding: 60px 0;}
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .footer__info {
+    flex: 1;
+
+    .footer__logo {
+      font-family: $font-logo;
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 20px;
+
+      .logo--blue {
+        color: $main-color;
+      }
+    }
+
+    .footer__address {
+      font-style: normal;
+
+      p {
+        margin: 0 0 10px;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      a {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 5px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+
+  // Соцмережі
+
+  .footer__social {
+    flex: 1;
+    text-align: center;
+
+    .footer__title {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .social-list {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      a {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: $main-color;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  // Підписка
+
+  .footer__subscribe {
+    flex: 1;
+    text-align: right;
+    min-width: 300px;
+
+    .footer__title {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .subscribe-form {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+
+      input {
+        flex: 1;
+        padding: 10px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        background: transparent;
+        color: #fff;
+        font-size: 14px;
+        outline: none;
+        transition: border-color 0.3s ease;
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.6);
+        }
+
+        &:focus {
+          border-color: $main-color;
+        }
+      }
+
+      .subscribe-btn {
+        background-color: $main-color;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+
+        &:hover {
+          background-color: darken($main-color, 8%);
+        }
+      }
+    }
+  }

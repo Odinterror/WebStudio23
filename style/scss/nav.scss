@@ -1,0 +1,39 @@
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+
+    .nav__link {
+      text-decoration: none;
+      color: $text-color;
+      font-weight: 500;
+      padding-bottom: 4px;
+      position: relative;
+      transition:
+        color $transition,
+        border-color $transition;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        background-color: $main-color;
+        border-radius: 1px;
+        transition: width $transition;
+      }
+
+      &:hover,
+      &:focus {
+        color: $main-color;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }

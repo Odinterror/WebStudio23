@@ -1,0 +1,39 @@
+.hero {
+background: url('../image/hero.png') center center / cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+
+  &__content {
+    max-width: 800px;
+  }
+
+  &__title {
+    font-size: 44px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+
+  &__button {
+    background-color: $main-color;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color $transition;
+
+    &:hover,
+    &:focus {
+      background-color: darken($main-color, 10%);
+    }
+  }
+}

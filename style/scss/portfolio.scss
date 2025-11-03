@@ -1,0 +1,91 @@
+.portfolio {
+  padding: 60px 0;
+  background-color: #fff;
+  text-align: center;
+
+  .portfolio-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .portfolio-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+
+    .filter {
+      background-color: #f5f4fa;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 4px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+
+      &.active,
+      &:hover {
+        background-color: $main-color;
+        color: #fff;
+      }
+    }
+  }
+
+  .portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    .portfolio-item {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: filter 0.3s ease;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 15px 0 5px;
+        color: $text-color;
+        transition: color 0.3s ease;
+      }
+
+      p {
+        color: $gray-color;
+        font-size: 14px;
+        margin-bottom: 15px;
+        transition: color 0.3s ease;
+      }
+
+      &:hover {
+        background-color: $main-color;
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+        img {
+          filter: brightness(0) invert(1); // робить іконку/зображення білим
+        }
+
+        h3,
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
