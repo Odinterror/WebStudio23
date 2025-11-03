@@ -306,7 +306,7 @@ body {
 }
 a:hover .team .social-list a .social-icon {
   filter: brightness(0) invert(1);
-}
+} 
 
 
 /*        Clients     **/
