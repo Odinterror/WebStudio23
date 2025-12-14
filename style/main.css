@@ -721,4 +721,88 @@ a:hover .team .social-list a .social-icon {
 .modal__btn:hover {
   background-color: rgb(12.0615384615, 129.6615384615, 223.1384615385);
 }
-/*# sourceMappingURL=style.css.map */
+
+
+@media (max-width: 479px) {
+
+  .header .nav__list,
+  .header .contacts {
+    display: none;
+  }
+
+  .hero {
+    height: auto;
+    padding: 80px 15px;
+  }
+
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .work-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 480px) {
+  .hero__title {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .header .nav__list {
+    display: flex;
+  }
+
+  .hero__title {
+    font-size: 38px;
+  }
+
+  .work-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .team-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer__container {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .header .contacts {
+    display: flex;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+}
