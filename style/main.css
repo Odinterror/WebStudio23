@@ -806,3 +806,71 @@ a:hover .team .social-list a .social-icon {
     max-width: 1200px;
   }
 }
+
+/* ================= PORTFOLIO ADAPTIVE ================= */
+
+@media (max-width: 479px) {
+
+  .portfolio {
+    padding: 40px 0;
+  }
+
+  .portfolio-title {
+    font-size: 22px;
+  }
+
+  .portfolio-filters {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .portfolio-filters .filter {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .portfolio-list {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-list .portfolio-item h3 {
+    font-size: 16px;
+  }
+
+  .portfolio-list .portfolio-item p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 480px) {
+
+  .portfolio-title {
+    font-size: 26px;
+  }
+
+  .portfolio-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+
+  .portfolio-filters {
+    justify-content: center;
+  }
+
+  .portfolio-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .portfolio-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .portfolio {
+    padding: 60px 0;
+  }
+}
